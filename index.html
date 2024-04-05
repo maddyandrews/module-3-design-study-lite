@@ -51,8 +51,8 @@
     <br>
     <h3>Core</h3>
     <h4>Discover</h4>
-    <p style="font-weight: 200;">Task 1: Identify percentages regarding the amount of children in different regions that
-        are far away from supermarkets</p>
+    <b>Task 1: Identify percentages regarding the amount of children in different regions that
+        are far away from supermarkets</b>
     <p> This task should be pursued because it can allow viewers to compare and contrast regions with supermarket
         accessibility issues (specifically regarding children). In doing so, people can gain a deeper understanding of
         the causes of the issues at hand and, as a result, how to resolve them. In terms of what this visualization can
@@ -79,8 +79,8 @@
 
     <br>
 
-    <p style="font-weight: 200;">Task 2: Identify regions where the percent of children far away from supermarkets is
-        notably greater than other regions.</p>
+    <b>Task 2: Identify regions where the percent of children far away from supermarkets is
+        notably greater than other regions.</b>
     <p>This task should be pursued so that regions in need of policy reform (regarding children's food accessibility,
         lunch programs in school, etc.) can be identified. After these regions are identified, the policy reform can
         actually be proposed and implemented by government officials and lawmakers.
@@ -107,5 +107,41 @@
     <img class="image" src="design.png">
     <br>
     <h4>Implement</h4>
+    <p>The visual was designed modeling the low fidelity prototype. The darker the shade of blue, the greater the
+        percentage of children (out of all individuals in a given county) that live at least 10 miles away from the
+        nearest supermarket. The visual does, indeed, carry out task 1 and task 2. </p>
+    <p>Task 1 is to “identify percentages regarding the amount of children in different regions that are far away from
+        supermarkets.” The color of each county on the visual is based solely on the percentage of children that live a
+        given distance away from the nearest supermarket. Counties in the US vary greatly by physical size. To better
+        visualize small counties, we selected a distance threshold of 10 miles for this given distance. Additionally,
+        when hovering over individual counties, the exact percentage is shown (unless the percentage calculated is 0 -
+        in which case no percentage is shown).</p>
+    <p>Task 2 is to “identify regions where the percentage of children far away from supermarkets is notably greater
+        than other regions.” Viewers can clearly identify the darkest regions, and these darkest regions are those with
+        the greatest percentages. In order to make the color variation more apparent, a stepped color range was
+        implemented, where the next darker shade is reserved for percentages between 5 and 10 percent greater than that
+        of the previous shade.</p>
+    <br>
+    <h4>Deploy</h4>
+    <h4>Iterate</h4>
+    <p>It seems that the supermarket metric isn't great for identifying low access to food by children. There aren't
+        many people or children living far from grocery stores in many US counties, and outlier counties are very
+        obvious when there is a small number of individuals living far from supermarkets. It would be helpful to pull in
+        another dataset that more explicitly conveys food accessibility (to analyze the percentage of low income
+        children that are able to get food from sources such as low/no-cost school lunches). This new dataset would also
+        need to relate fields to counties. Instead of calculating the percent of low food access for children by
+        supermarket proximity, we would use alternative fields from the new dataset to do so (also by county). This new
+        task would re-analyze which counties and regions have the largest percentage of children with low food access
+        using more relevant metrics.</p>
+    <br>
+
+    <h3>Analysis</h3>
+
+    <h4>Reflect Pt. 1</h4>
     <p></p>
+    <br>
+
+    <h4>Reflect Pt. 2</h4>
+    <p></p>
+    <br>
 </body>
