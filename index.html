@@ -107,6 +107,7 @@
     <img class="image" src="design.png">
     <br>
     <h4>Implement</h4>
+    <a href="https://public.tableau.com/app/profile/matthew.kolsch/viz/PercentLowSupermarketAccessofTotalPopulationChildren/PercentLowSupermarketAccessofTotalPopulationChildren">Tableau: Percent Low Supermarket Access of Total Population – Children</a>
     <p>The visual was designed modeling the low fidelity prototype. The darker the shade of blue, the greater the
         percentage of children (out of all individuals in a given county) that live at least 10 miles away from the
         nearest supermarket. The visual does, indeed, carry out task 1 and task 2. </p>
@@ -123,25 +124,38 @@
         of the previous shade.</p>
     <br>
     <h4>Deploy</h4>
-    <p>Observations from Country POV:
-        <ul>
-        <li>Different regions (and states) of the United States have very different color makeups, illustrating differences in the percent of children with low supermarket access.</li>
-        <li>Without already knowing the shape of different states, it can be difficult to discern the state borders.</li>
-        <li>Counties in Florida, Alaska, Hawaii, and the Western US seemed to have the greatest percents</li>
-        </ul>
-        Observations from State POV:
-        <ul>
+    <b>Observations from Country POV:</b>
+    <p>
+    <ul>
+        <li>Task 1: Darker shaded counties reflect higher percents of children who have low food access, and lighter
+            shaded ones reflect low percentages. This effectively allows viewers to compare county-to-county on the
+            number of children there with low food access.</li>
+        <li>Task 2: Counties in Florida, Alaska, Hawaii, and the Western US seemed to have the greatest percents</li>
+        <li>Different regions (and states) of the United States have very different color makeups, illustrating
+            differences in the percent of children with low supermarket access.</li>
+        <li>Without already knowing the shape of different states, it can be difficult to discern the state borders.
+        </li>
+    </ul>
+    Observations from State POV:
+    <ul>
+        <li>Task 1: Darker shaded counties reflect higher percents of children who have low food access, and lighter
+            shaded ones reflect low percentages. This effectively allows viewers to compare county-to-county on the
+            number of children there with low food access.</li>
+        <li>Task 1: A lot of counties appear to be somewhere in the ~20% range and there are very few with ~40% or greater.</li>
+        <li>Task 2: Differences in counties within a single state are easy to discern upon zooming into the map visual.</li>
         <li>Different counties in a single state have very different color makeups.</li>
-        <li>A lot of counties appear to be somewhere in the ~20% range and there are very few with ~40% or greater</li>
-        <li>After looking closely at the dataset, you can see that this is (sometimes) skewed by the number of children living 10 miles away from the nearest supermarket being very small</li>
-        <li>A lot of counties that have smaller populations to begin with may appear as outlines, which skews the perception of the data as a whole</li>
-        </ul>
-        Observations from County POV:
-        <ul>
-        <li>Looking at an individual county just shows the county with its given color</li>
-        <li>Without comparing different counties to one another, this visual is not very helpful</li>
-        </ul>
-        </p>
+        <li>After looking closely at the dataset, you can see that this is (sometimes) skewed by the number of children
+            living 10 miles away from the nearest supermarket being very small.</li>
+        <li>A lot of counties that have smaller populations to begin with may appear as outlines, which skews the
+            perception of the data as a whole</li>
+    </ul>
+    Observations from County POV:
+    <ul>
+        <li>Looking at an individual county just shows the county with its given color, reflecting how many children there have low food access.</li>
+        <li>Without comparing different counties to one another, this visual is not very helpful at this low of a level.</li>
+        <li>Some counties appear to have very high percentages due to low sample size, making this even more difficult to discern.</li>
+    </ul>
+    </p>
     <br>
     <h4>Iterate</h4>
     <p>It seems that the supermarket metric isn't great for identifying low access to food by children. There aren't
@@ -163,31 +177,37 @@
 
     <h4>Reflect Pt. 2</h4>
     <p>Creating this visualization stressed the importance of using the right tools for the right tasks. After creating
-        our tasks for this visualization (identifying the percent of children in different regions that are far away 
-        from supermarkets + the regions where these values are noticeably larger than others), it was clear that creating 
-        a map visualization with different colored regions was the right approach. Because of this, it was also clear 
-        that Tableau was the tool to use. Had we not already been exposed to Tableau, however, and knew that it was 
-        suitable for our tasks, pre-module-3 us might have attempted to create this visual with a different tool, like D3.
-        Recreating the map visualization in this way would have taken far longer and been totally unnecessary. In the 
-        future, if the right tool to create a certain kind of visualization doesn’t immediately come to mind, we will be 
-        sure to research existing tools to ensure we don’t recreate the wheel.
+        our tasks for this visualization (identifying the percent of children in different regions that are far away
+        from supermarkets + the regions where these values are noticeably larger than others), it was clear that
+        creating
+        a map visualization with different colored regions was the right approach. Because of this, it was also clear
+        that Tableau was the tool to use. Had we not already been exposed to Tableau, however, and knew that it was
+        suitable for our tasks, pre-module-3 us might have attempted to create this visual with a different tool, like
+        D3.
+        Recreating the map visualization in this way would have taken far longer and been totally unnecessary. In the
+        future, if the right tool to create a certain kind of visualization doesn't immediately come to mind, we will be
+        sure to research existing tools to ensure we don't recreate the wheel.
         <br><br>
-        In terms of actually designing the visualization, it was extremely helpful to have multiple opinions and sets of 
-        eyes. The first go-around at creating this visualization had each percentage value mapped to a different color on 
-        the map. This made it difficult to discern variations between certain regions and, as a result, made the visual a 
-        less helpful tool for comparison. After one of us had the idea of separating color shades by 5% increments, the 
-        visualization became much more clear. Designing the visualization with a pair programming approach worked very well. 
-        It made the design and implementation processes much smoother, and helped the end product be better than it would 
+        In terms of actually designing the visualization, it was extremely helpful to have multiple opinions and sets of
+        eyes. The first go-around at creating this visualization had each percentage value mapped to a different color
+        on
+        the map. This made it difficult to discern variations between certain regions and, as a result, made the visual
+        a
+        less helpful tool for comparison. After one of us had the idea of separating color shades by 5% increments, the
+        visualization became much more clear. Designing the visualization with a pair programming approach worked very
+        well.
+        It made the design and implementation processes much smoother, and helped the end product be better than it
+        would
         have been otherwise (like with, for example, implementing steps to the color shades).
         <br><br>
-        One thing that was difficult, though, when creating the visualization was figuring out if there was a best 
-        perspective (or zoom) from which to view the visualization. When the entire country can be viewed, pieces 
-        of the map could appear darker than they actually were, which implies greater percentages of children lacking 
-        access to supermarkets. This was not evident when the user was zoomed into a smaller region. We realized that 
-        this was due to the black outlines of county borders – particularly where there are a large number of counties 
-        in a relatively small space, like the east coast. This was an unforeseen bias from our visualization. In the 
+        One thing that was difficult, though, when creating the visualization was figuring out if there was a best
+        perspective (or zoom) from which to view the visualization. When the entire country can be viewed, pieces
+        of the map could appear darker than they actually were, which implies greater percentages of children lacking
+        access to supermarkets. This was not evident when the user was zoomed into a smaller region. We realized that
+        this was due to the black outlines of county borders - particularly where there are a large number of counties
+        in a relatively small space, like the east coast. This was an unforeseen bias from our visualization. In the
         future, it would be helpful to consider these things in advance (and research examples of map visuals used with
-        the same tools/frameworks). Additional research could save time (or reduce unexpected delays) further down the 
+        the same tools/frameworks). Additional research could save time (or reduce unexpected delays) further down the
         line in the visualization-making process.
     </p>
     <br>
