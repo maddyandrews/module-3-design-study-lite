@@ -3,18 +3,106 @@
 <meta charset="utf-8">
 
 <link rel="stylesheet" type="text/css" href="style.css">
+
 <body>
     <h1>Module 3: Design Story Lite</h1>
     <h2>Madelyn Andrews, Matthew Kolsch</h2>
     <br>
     <h3>Precondition</h3>
     <h4>Learning</h4>
-    <p>Children in the United States facing low food accessibility can, during school times, depend on 1-2 meals a day from
-        a cafeteria, should their school have a free meal program. Outside of school hours, however (dinner time, weekends,
-        school breaks, etc.), whether or not a youth has access to food is outside of their hands. In order to address low
+    <p>Children in the United States facing low food accessibility can, during school times, depend on 1-2 meals a day
+        from
+        a cafeteria, should their school have a free meal program. Outside of school hours, however (dinner time,
+        weekends,
+        school breaks, etc.), whether or not a youth has access to food is outside of their hands. In order to address
+        low
         food accessibility for children, it is important to identify geographical regions within which children’s food
         accessibility is low. From identifying these regions (and especially those with disproportionately low food
         accessibility for children, in particular), we can better understand how to resolve this issue. </p>
     <br>
     <h4>Winnowing</h4>
+    <p>In order to analyze discrepancies in food access for children across various regions, we can look at the CORGIS
+        Dataset Project’s Food Access CSV. This dataset comes from the US Department of Agriculture’s Economic Research
+        Service. It primarily contains data relating several demographics (low income households, children, seniors, and
+        the general population) and how easily they are able to access food. This is quantified by the distance they are
+        from any supermarket, or by the number of stores in their vicinity. In addition to accounting for family income,
+        the data accounts for access to transportation by household. However, proximity to stores only shows how
+        accessible food is physically, not financially. This dataset does not include factors such as family size, which
+        can affect how income is able to be utilized by a household. It also doesn’t account for those who are homeless.
+        The data does not give insight to a family’s financial situation, such as debts they may have. These can all
+        impact food accessibility in ways greater than just being able to get to a grocery store. Especially for
+        demographics such as children, being close to a supermarket is not the best measure for access to food, as they
+        have neither financial nor physical means to get food by themselves there, nor should they be responsible for
+        such. This ignores the possibility that parents and guardians are not providing them with food access as
+        adequately as they should, or in the case they are unable to do so. However, distance to supermarkets does at
+        least give insight into how easy it is to get to a food store from a transportation standpoint, which can still
+        be valuable in understanding food access.
+
+        This tabular dataset provides information detailing food accessibility by region, and also shows how different
+        demographics fare in relation to proximity to food sources (i.e. supermarkets). The state and county fields are
+        categorical properties that define what region a data point belongs to. The data set also contains quantitative
+        fields, denoted as Low Access Numbers, describing how many people of a certain population live within certain
+        distances to supermarkets (i.e within 0.5, 1, 10, and 20 miles). This includes both children specifically and
+        the general population. Using the regional fields, as well as the low access number fields, can enable us to
+        identify which geographical regions have the highest counts of children with low food access. This can also help
+        to highlight patterns across certain states or counties where this disparity in food access is especially
+        apparent.
+    </p>
+    <br>
+    <h3>Core</h3>
+    <h4>Discover</h4>
+    <p style="font-weight: 200;">Task 1: Identify percentages regarding the amount of children in different regions that
+        are far away from supermarkets</p>
+    <p> This task should be pursued because it can allow viewers to compare and contrast regions with supermarket
+        accessibility issues (specifically regarding children). In doing so, people can gain a deeper understanding of
+        the causes of the issues at hand and, as a result, how to resolve them. In terms of what this visualization can
+        allow people to learn about the data, it would help individuals learn the following:
+
+        What % of individuals in a region far away from supermarkets are children?
+        What % of children in a region are far away from supermarkets?
+
+        In terms of where the task operates, we'd be looking at the specific regions (counties in different states of
+        the US) and “Low Access Numbers”, which represents the number of people in a given county that are a certain
+        distance away (in miles) from a supermarket. This “Low Access Numbers” category is broken into numerous fields
+        separated by this distance, which ranges from half a mile to 20 miles. Additionally, these fields have data for
+        just children and all individuals.
+
+        Regarding when the task is performed, a visualization must be constructed first. After that point, viewers can
+        discern what regions have the highest percent of low access children, and the greatest disparities of access
+        between children and adults in a given region.
+
+        As for who is executing the tasks, data analysts can interpret the results of the visualization. Then, they can
+        pass their findings to a supervisor, who can communicate to an audience. This audience can hopefully use it to
+        evaluate why food accessibility is a problem (or a greater problem) in certain regions and not others.
+    </p>
+    <br>
+    <p style="font-weight: 200;">Task 2: Identify regions where the percent of children far away from supermarkets is
+        notably greater than other regions.</p>
+    <p>This task should be pursued so that regions in need of policy reform (regarding children's food accessibility,
+        lunch programs in school, etc.) can be identified. After these regions are identified, the policy reform can
+        actually be proposed and implemented by government officials and lawmakers.
+
+        This visual would shed light on US states and counties in need of policy reform. In particular, it would
+        highlight individual regions (states and counties) in which there are notably high levels of food
+        inaccessibility for children.
+
+        This task operates in the same space as task 1. To recap, we're looking at specific regions (counties in
+        different states of the US) and “Low Access Numbers” - counts of individuals (separated by age group) that are a
+        certain distance away from a supermarket. This task builds off the findings of Task 1.
+
+        Additionally, a visualization must be constructed prior to carrying out this task. Following the construction of
+        the visual, though, viewers should be able to simply identify regions that might need to be prioritized for care
+        and policy rework.
+
+        This tool could be used directly by policy makers. These individuals are responsible for deciding which regions
+        to prioritize for policy changes. Additionally, if the general public wanted to use the visualization and saw
+        that a region for which they care is identified as a high priority, they could lobby for their government
+        representatives to devote time and resources into resolving children food inaccessibility in a given region.
+    </p>
+    <br>
+    <h4>Design</h4>
+    <img src="design.png">
+    <br>
+    <h4>Implement</h4>
+    <p></p>
 </body>
